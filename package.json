@@ -7,7 +7,9 @@
     "test": "mocha ./spec --compilers js:babel-core/register",
     "dev": "webpack-dev-server",
     "lint": "eslint ./",
-     "posttest": "npm run lint"
+    "posttest": "npm run lint",
+    "start": "node server.js",
+    "seed": "nodemon seed/seed.js"
   },
   "author": "",
   "license": "ISC",
@@ -22,8 +24,19 @@
     "webpack-dev-server": "^2.4.2"
   },
   "dependencies": {
+    "async": "^2.4.0",
     "axios": "^0.15.3",
-    "express": "^4.15.2",
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "body-parser": "^1.17.2",
+    "chance": "^1.0.8",
+    "css-loader": "^0.27.3",
+    "express": "^4.15.3",
+    "log4js": "^1.1.1",
+    "moment": "^2.18.1",
+    "mongoose": "^4.10.0",
     "react": "^15.2.1",
     "react-addons-css-transition-group": "^15.5.1",
     "react-dom": "^15.2.1",
@@ -31,13 +44,9 @@
     "react-router": "^2.8.1",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
-    "webpack": "^2.3.3",
-    "css-loader": "^0.27.3",
-    "babel-loader": "^6.2.4",
-    "babel-core": "^6.11.4",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.11.1",
     "style-loader": "^0.13.2",
-    "url-loader": "^0.5.8"
+    "underscore": "^1.8.3",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.3.3"
   }
 }

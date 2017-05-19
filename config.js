@@ -1,4 +1,10 @@
 module.exports = {
-  ROOT: 'https://northcoders-news-api.herokuapp.com/api',
-  USERNAME: 'northcoder'
+  DB: {
+    test: 'mongodb://localhost/northcoders-news-api-test',
+    dev: 'mongodb://Richard-Thompson:dlo19589@ds129179.mlab.com:29179/north_coders_news'
+  },
+  PORT: {
+    test: 3090,
+    dev: 3000
+  }
 };

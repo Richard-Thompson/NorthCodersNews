@@ -1,6 +1,6 @@
 import * as types from './types';
 import axios from 'axios';
-import {ROOT} from '../../config.js';
+import {ROOT} from '../../fontendconfig.js';
 
 export function fetchAllArticles () {
     return function (dispatch) {
